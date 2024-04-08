@@ -17,6 +17,7 @@ if __name__ == "__main__":
         if message == 'exit':
             break
 
-        answer = chat_llm.new_message(message)
+        answer, context = chat_llm.new_message(message)
 
         print(f"AI : {answer}")
+        print(f"Context : {context}")

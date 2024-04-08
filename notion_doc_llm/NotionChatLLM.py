@@ -89,5 +89,4 @@ class NotionChatLLM:
             AIMessage(response['answer'])
         ])
 
-        return response['answer']
-
+        return response['answer'], response['context']
